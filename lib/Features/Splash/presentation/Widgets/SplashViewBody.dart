@@ -29,7 +29,7 @@ class _SplashBodyState extends State<SplashBody>
           });*/
     // animationController!.forward();
     animationController?.repeat(reverse: true);
-   // goToNextView();
+    goToNextView();
   }
 
   void dispose() {
@@ -68,11 +68,11 @@ class _SplashBodyState extends State<SplashBody>
     );
   }
 //تأخير لمدة 10 ثواني ننتقل بعدها لنفتح صفحة جديدة
- /* void goToNextView() {
+  void goToNextView() {
     Future.delayed(Duration(seconds:4 ),(){
       Get.to(()=>OnBoardingView(),transition: Transition.fade);
 
     }
     );
-  }*/
+  }
 }
