@@ -12,7 +12,9 @@ class PageViewItem extends StatelessWidget {
     return Column(
       children: [
         SizedBox(height:170,),
-        Image.asset(image!),
+         Container(
+          height:200,
+          child: Image.asset(image!)),
         SizedBox(height:40,),
         Text(
           title!,
