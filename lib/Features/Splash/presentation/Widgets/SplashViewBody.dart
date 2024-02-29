@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitsmarketapp/Core/utilise/size_config.dart';
 import 'package:fruitsmarketapp/Features/OnBoarding/presentation/onBoardingView.dart';
 import 'package:get/get.dart';
 
@@ -39,6 +40,7 @@ class _SplashBodyState extends State<SplashBody>
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
     return Column(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
@@ -67,12 +69,11 @@ class _SplashBodyState extends State<SplashBody>
       ],
     );
   }
+
 //تأخير لمدة 10 ثواني ننتقل بعدها لنفتح صفحة جديدة
   void goToNextView() {
-    Future.delayed(Duration(seconds:4 ),(){
-      Get.to(()=>OnBoardingView(),transition: Transition.fade);
-
-    }
-    );
+    Future.delayed(Duration(seconds: 3), () {
+      Get.to(() => OnBoardingView(), transition: Transition.fade);
+    });
   }
 }
