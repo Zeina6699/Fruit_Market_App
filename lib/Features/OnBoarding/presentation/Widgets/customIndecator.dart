@@ -16,7 +16,7 @@ class CustomIndecator extends StatelessWidget {
               borderRadius: BorderRadius.circular(8),
               side: BorderSide(color: KMainColor))),
       dotsCount: 3,
-      position:2
+      position:0
     );
   }
 }
