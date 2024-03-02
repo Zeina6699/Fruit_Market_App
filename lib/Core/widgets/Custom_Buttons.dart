@@ -11,16 +11,19 @@ class CustomGeneralButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onTap,
-      child: Container(
-          height: 60,
-          width: SizeConfig.screenWidth,
-          decoration: BoxDecoration(
-              color: KMainColor, borderRadius: BorderRadius.circular(8)),
-          child: Center(
-              child: Text(
-            text!,
-            style: TextStyle(fontSize: 19, color: Colors.white),
-          ))),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 10),
+        child: Container(
+            height: 60,
+            width: SizeConfig.screenWidth,
+            decoration: BoxDecoration(
+                color: KMainColor, borderRadius: BorderRadius.circular(8)),
+            child: Center(
+                child: Text(
+              text!,
+              style: TextStyle(fontSize: 19, color: Colors.white),
+            ))),
+      ),
     );
   }
 }

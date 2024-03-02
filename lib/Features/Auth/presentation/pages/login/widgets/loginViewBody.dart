@@ -27,9 +27,11 @@ class loginViewBody extends StatelessWidget {
                         fontSize: 51,
                         fontWeight: FontWeight.bold),
                   ),
-                   SizedBox(
-          height: 200,
-        ),
+                   Expanded(
+                     child: SizedBox(
+                             height: 50,
+                           ),
+                   ),
                      Row(
                       children: [
                         Flexible(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fruitsmarketapp/Features/Auth/presentation/pages/completeInformation/completeInformation.dart';
 import 'package:fruitsmarketapp/Features/Auth/presentation/pages/login/loginView.dart';
 import 'package:fruitsmarketapp/Features/Splash/presentation/SplashView.dart';
 import 'package:get/get.dart';
@@ -16,7 +17,7 @@ class MyApp extends StatelessWidget {
     return const GetMaterialApp(
       debugShowCheckedModeBanner: false,
 
-home: LoginView(),
+home:completeInformation()
     );
   }
 }
